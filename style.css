@@ -17,7 +17,7 @@
 .logo-image
 {
     height: 30px;
-    width: 96px;
+    width: 100px;
     padding: 1px 0px 0px 6px;
     margin-top: 12px;
 }
@@ -37,12 +37,70 @@
     padding:0px;
     margin-left: 15px;
     margin-bottom: 10px;
-    margin-top: 5px;
+    margin-top: 0px;
     padding-right: 10px;
+    border : 0.1rem solid transparent;
     
 }
 
 .logo-with-in:hover
+{
+    border : 0.1rem solid white;
+    border-radius: 2px;
+}
+
+.material-symbols-outlined
+{
+    color : white;
+    margin-top: 15px;
+}
+
+.location
+{
+    display: flex;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    /* margin-top: 10px; */
+    border : 0.1rem solid transparent;
+    padding : 10px 10px 7px 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.delivering
+{
+    color : white;
+    display: flexs;
+}
+
+.delivering-to
+{
+    font-size: 13px;
+    color:rgb(204, 204, 204);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+
+.delivering-update-location
+{
+    font-size: 15px;
+    font-weight: 700;
+    color:rgb(255, 255, 255);
+}
+
+.location-anchor
+{
+    display: flex;
+    color:white;
+    padding : 0;
+    margin : 0;
+    text-decoration: none;
+}
+
+.location:hover
 {
     border : 0.1rem solid white;
     border-radius: 2px;
