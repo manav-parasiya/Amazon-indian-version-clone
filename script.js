@@ -1,36 +1,26 @@
-let next = document.querySelector(".next");
-let previous = document.querySelector(".previous");
-let sliderImages = document.querySelectorAll(".slider-images");
-let count = 1;
-sliderImages[0].style.display = "block";
-
-next.addEventListener("click", () =>
-{
-    if(count == 4)
-    {
-        count = 1;
+document.addEventListener("DOMContentLoaded", function() {
+    const slides = document.querySelectorAll(".slide");
+    const prevBtn = document.querySelector(".prev");
+    const nextBtn = document.querySelector(".next");
+    let currentIndex = 0;
+  
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.style.transform = `translateX(-${index * 100}%)`;
+      });
     }
-    sliderImages[count].style.display = "none";
-    sliderImages[0].style.display = "none";
-    if( count == 1 )
-    {
-        sliderImages[0].style.display = "none";
-        sliderImages[1].style.display = "block";
+  
+    function prevSlide() {
+      currentIndex = (currentIndex === 0) ? slides.length - 1 : currentIndex - 1;
+      showSlide(currentIndex);
     }
-    console.log("count value before any opration : - " , count);
-    sliderImages[count].style.display = "block";
-    
-    count++;
-    console.log("count value after any opration : - " , count);
-
-        
-        
-    console.log("Next button was clicked!");
-})
-
-previous.addEventListener("click", () =>
-{
-    console.log("Previous button was clicked!");
-})
-
-console.log("All slider images : - " , sliderImages);
+  
+    function nextSlide() {
+      currentIndex = (currentIndex === slides.length - 1) ? 0 : currentIndex + 1;
+      showSlide(currentIndex);
+    }
+  
+    prevBtn.addEventListener("click", prevSlide);
+    nextBtn.addEventListener("click", nextSlide);
+  });
+  
