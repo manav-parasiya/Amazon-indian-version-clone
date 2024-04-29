@@ -4,7 +4,10 @@
     margin : 0px;
     box-sizing: border-box;
 }
-
+a
+{
+    text-decoration: none;
+}
 .navbar
 {
     display: flex;
@@ -43,6 +46,110 @@
     
 }
 
+/* .outer-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px; Adjust as needed 
+
+.outer-div > div {
+    width: 100%;  Ensure each container div takes up full width 
+    text-align: center;  Optional: Center images within each div 
+}
+.outer-div img {
+    max-width: 100%;  Ensure images fit within their container 
+    height: auto;  Maintain aspect ratio 
+}
+
+
+ */
+.navbar-2 span
+{
+    border: 2px solid transparent;
+    padding: 6px;
+}
+
+.navbar-2 span:hover
+{
+    border: 2px solid white;
+}
+ span a
+ {
+    color: white;
+    text-decoration: none;
+ }
+ .container
+ {
+     display: flex;
+     margin-top: -100px;
+ 
+ }
+
+ .container-2
+ {
+    display: flex;
+    margin-top: 20px;
+
+ }
+  .outer-div {
+     position: relative;
+     width: 310px; /* Set width of outer div */
+     height: 420px; /* Set height of outer div */
+     overflow: hidden; /* Hide overflow if inner content exceeds dimensions */
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     background-color: black;
+     margin: 0px 10px;
+ }
+ .inner-div
+ {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-gap: 10px; /* Adjust as needed */
+ }
+ 
+ .inner-div > div {
+     width: 100%; /* Ensure each container div takes up full width */
+     text-align: center; /* Optional: Center images within each div */
+ }
+ .inner-div img {
+     max-width: 100%; /* Ensure images fit within their container */
+     height: auto; /* Maintain aspect ratio */
+ }
+ 
+ .inner-div img {
+     width: 130px; /* Set width of images */
+     height: 100px; /* Set height of images */
+     object-fit: cover; /* Ensure images maintain aspect ratio and cover entire space */
+ }
+ 
+ .card-product-name
+ {
+     color: white;
+     font-size: 18px;
+     padding: 0px 20px;
+     margin-bottom: 10px;
+ }
+ 
+ .see-more a {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     text-align: left;
+     padding: 10px;
+     color: white; 
+     text-decoration: none; 
+ }
+ 
+ h3
+ {
+     padding: 0px;
+     margin: 0px;
+     color:white;
+     font-size: 12px;
+ }
 .logo-with-in:hover
 {
     border : 0.1rem solid white;
@@ -73,6 +180,7 @@
 {
     color : white;
     display: flexs;
+    
 }
 
 .delivering-to
@@ -122,6 +230,7 @@
 
 .navbar-select
 {
+    margin-left:10px;
     background-color: #E6E6E6;
     margin-top: 10px;
     width: 60px;
@@ -132,6 +241,25 @@
     border-bottom-left-radius: 3px;
     border: none ;
     margin-right: 0px;
+}
+.sign-in
+{
+    border: 1px solid transparent;
+}
+
+.sign-in:hover
+{
+    border:1px solid white;
+}
+
+.return-order
+{
+    border: 1px solid transparent;
+}
+
+.return-order:hover
+{
+    border: 1px solid white;
 }
 
 .navbar-select-options
@@ -259,13 +387,24 @@
     /* top:500px; */
     /* margin-top: -390px; */
     top: 200px;
+    font-size: 20px;
+    padding: 10px;
+    /* font-weight: 900; */
+    background-color: black;
+    color: white;
+    border-radius: 50%;
 
 }
 
+.prev
+{
+
+    left: 5px;
+}
 .next
 {
 
-    right: 0;
+    right: 5px;
 }
 
 .section-2
