@@ -26,6 +26,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
   let parent = document.querySelector(".fake-product-card");
+  parent.style.display = "flex";
+  parent.style.flexWrap = "wrap";
   
   // img.setAttribute("class","fake-product-card-img");
   
@@ -49,13 +51,24 @@ let fun = async () =>
     for (const singleProduct of res) {
       // console.log(singleProduct.image);
       let card = document.createElement("div");
+      card.style.display = "flex";
       card.style.height = "200px";
       card.style.width = "200px";
-      card.style.backgroundColor = "blue";
+      let color = `rgb(61, 117, 217)`
+      card.style.backgroundColor = color;
+      card.style.justifyContent = "center";
+      card.style.alignContent = "center";
+      card.style.alignItems = "center";
+      card.style.flexDirection = "column";
+      card.style.border = "1px solid black";
+      card.style.margin = "10px";
+      card.style.padding = "10px";
       let h4 = document.createElement("h4");
       h4.innerText = singleProduct.title;
       card.appendChild(h4);
       let img = document.createElement("img");
+      img.setAttribute("height", "100px");
+      img.setAttribute("width", "100px");
       img.setAttribute("src", singleProduct.image);
       img.setAttribute("alt", "no image");
       // console.log("singleProduct.image : - " ,singleProduct.image);

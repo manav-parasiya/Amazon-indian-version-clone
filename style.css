@@ -3,10 +3,16 @@
     padding : 0px;
     margin : 0px;
     box-sizing: border-box;
+    /* background-color: #E3E6E6; */
 }
 a
 {
     text-decoration: none;
+}
+
+.body
+{
+    background-color: #E3E6E6;
 }
 .navbar
 {
@@ -81,6 +87,7 @@ a
  {
      display: flex;
      margin-top: -100px;
+     background-color: #E3E6E6;
  
  }
 
@@ -100,14 +107,18 @@ a
      flex-direction: column;
      align-items: center;
      justify-content: center;
-     background-color: black;
+     background-color: white;
      margin: 0px 10px;
+     box-shadow: 1px 1px lightblue;
+     border: 0.001vw solid rgb(131, 131, 131);
+     
  }
  .inner-div
  {
      display: grid;
      grid-template-columns: repeat(2, 1fr);
      grid-gap: 10px; /* Adjust as needed */
+     
  }
  
  .inner-div > div {
@@ -127,10 +138,11 @@ a
  
  .card-product-name
  {
-     color: white;
+    color: black;
      font-size: 18px;
      padding: 0px 20px;
      margin-bottom: 10px;
+
  }
  
  .see-more a {
@@ -140,7 +152,7 @@ a
      width: 100%;
      text-align: left;
      padding: 10px;
-     color: white; 
+     color: black;
      text-decoration: none; 
  }
  
@@ -148,12 +160,12 @@ a
  {
      padding: 0px;
      margin: 0px;
-     color:white;
+     color: black;
      font-size: 12px;
  }
 .logo-with-in:hover
 {
-    border : 0.1rem solid white;
+    border : 0.1rem solid black;
     border-radius: 2px;
 }
 
@@ -484,6 +496,7 @@ footer
 {
     /* display: flex; */
     background-color: #232F3E;
+    color: white;
 }
 
 .section300
@@ -492,6 +505,74 @@ footer
      margin-top: 100px;
      border-top: 1px solid white;
 }
+
+#image-1-1
+{
+    width: 146.266px;
+    height: 183.969px;
+    margin: 8.016px 46.859px  ;
+}
+#image-1-2
+{
+    width: 146.266px;
+    height: 183.969px;
+}
+
+#image-1-3
+{
+    width: 202.391px;
+    height: 183.984px;
+}
+
+#image-1-4
+{
+    width: 129.719px;
+    height: 183.977px;
+    margin: 8px 55.141px;
+}
+
+#image-1-5
+{
+    width: 204.234px;
+    height: 183.984px;
+    margin: 8px 17.875px;
+}
+
+#image-1-6
+{
+    width: 153.625px;
+    height: 183.969px;
+    margin: 8.016px 43.188px;
+}
+
+#image-1-7
+{
+    width: 178.469px;
+    height: 183.984px;
+    margin: 8px 30.766px;
+}
+
+#image-1-8
+{
+    width: 224px;
+    height: 160px;
+    margin: 20px 8px;
+}
+
+#image-1-9
+{
+    width: 224px;
+    height: 160px;
+    margin: 20px 8px;
+}
+
+#image-1-10
+{
+    width: 102.109px;
+    height: 183.969px;
+    margin: 8.016px 68.938px;
+}
+
 .footer-section-1
 {
     display: flex;
@@ -584,8 +665,7 @@ ul
 
   .spacee
   {
-    margin-top: 500px;
-    margin-bottom: 500px;
+    margin-top: 50px;
   }
   body {
     /* display: flex; */
@@ -598,6 +678,9 @@ ul
   .container-5 {
     max-width: 1200px;
     width: 95%;
+    background-color: #FFF;
+    box-shadow: 1px 1px blur;
+    border: 1px solid whitesmoke;
   }
   
   .slider-wrapper {
